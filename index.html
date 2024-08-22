@@ -4,6 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rinterio</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind and daisyui -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
@@ -14,11 +30,100 @@
       tailwind.config = {
         theme: {
           extend: {
-            colors: {},
+            colors: {
+              green1: "rgb(171, 239, 95)",
+              green2: "rgba(171, 239, 95, 0.2)",
+              green3: "rgba(171, 239, 95, 0.5)",
+              black1: "rgb(28, 28, 28)",
+              black2: "rgb(33, 33, 33)",
+              black3: "rgb(73, 73, 73)",
+              black4: "rgb(115, 115, 115)",
+            },
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
           },
         },
       };
     </script>
   </head>
-  <body></body>
+  <body class="font-manrope">
+    <!-- header -->
+    <header id="home" class="bg-zinc-50">
+      <!-- nav -->
+      <nav class="container mx-auto">
+        <div class="navbar">
+          <div class="navbar-start sm:w-2/5 lg:w-1/2">
+            <a href="#home">
+              <div class="flex items-center gap-2 cursor-pointer">
+                <div class="bg-green1 rounded-full text-center">
+                  <i
+                    class="fa-solid fa-arrow-right px-2 py-1 text-black1 text-xl -rotate-45"
+                  ></i>
+                </div>
+                <h2 class="text-3xl font-extrabold leading-tight">Rinterio</h2>
+              </div>
+            </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a class="font-extrabold text-black3" href="#home">Home</a>
+              </li>
+              <li><a class="text-black4" href="#works">Services</a></li>
+              <li><a class="text-black4" href="#portfolio">Portfolio</a></li>
+              <li><a class="text-black4" href="#articles">Blogs</a></li>
+              <li><a class="text-black4" href="#connect">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end sm:gap-4 sm:w-3/5 lg:w-1/2">
+            <i
+              class="hidden sm:inline fa-solid fa-magnifying-glass px-2 py-1 text-black4 text-xl bg-white rounded-full border cursor-pointer"
+            ></i>
+            <i
+              class="hidden sm:inline fa-solid fa-cart-shopping px-2 py-1 text-black4 text-xl bg-white rounded-full border cursor-pointer"
+            ></i>
+            <button
+              class="hidden sm:inline py-2 px-4 bg-green1 font-extrabold text-lg rounded-full"
+            >
+              Book Consult
+              <i
+                class="fa-solid fa-arrow-right px-2 py-1 text-white text-xl -rotate-45 bg-black1 rounded-full ml-2"
+              ></i>
+            </button>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+              >
+                <li>
+                  <a class="text-black4" href="#home">Home</a>
+                </li>
+                <li><a class="text-black4" href="#works">Services</a></li>
+                <li><a class="text-black4" href="#portfolio">Portfolio</a></li>
+                <li><a class="text-black4" href="#articles">Blogs</a></li>
+                <li><a class="text-black4" href="#connect">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>

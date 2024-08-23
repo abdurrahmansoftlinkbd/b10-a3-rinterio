@@ -38,6 +38,10 @@
               black2: "rgb(33, 33, 33)",
               black3: "rgb(73, 73, 73)",
               black4: "rgb(115, 115, 115)",
+              pink1: "rgb(231, 193, 211)",
+              yellow1: "rgb(239, 218, 110)",
+              teal1: "rgb(164, 218, 195)",
+              blue1: "rgb(119, 170, 234)",
             },
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
@@ -154,7 +158,6 @@
     <!-- main1 -->
     <main class="bg-base-200">
       <!-- about -->
-
       <div id="about" class="hero py-24">
         <div
           class="hero-content container mx-auto justify-between flex-col-reverse lg:flex-row-reverse gap-9 relative"
@@ -222,6 +225,89 @@
           </div>
         </div>
       </div>
+
+      <!-- works -->
+      <section class="container mx-auto px-4 sm:px-0">
+        <div>
+          <div class="text-center">
+            <a href="#works"
+              ><button
+                class="font-bold text-black3 bg-white py-2 px-4 rounded-full mb-4"
+              >
+                <i class="fa-solid fa-arrow-right mr-2"></i>
+                How we works
+              </button></a
+            >
+          </div>
+          <div class="text-center w-full lg:w-1/2 mx-auto">
+            <h2 class="text-4xl font-bold leading-tight">Our Works Process</h2>
+            <p class="pt-6 pb-8 font-medium text-black3">
+              Discover our meticulous step-by-step process, from concept to
+              completion, ensuring excellence in every architectural detail.
+            </p>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 sm:gap-x-5 lg:gap-x-6 gap-y-4 sm:gap-y-6"
+        >
+          <div class="card bg-pink1">
+            <div class="card-body">
+              <div class="w-1/6">
+                <img class="w-full" src="./assets/concept.png" alt="" />
+              </div>
+              <h2 class="card-title text-black1 font-extrabold">Concept</h2>
+              <p class="text-black3 font-medium">
+                Visionary designs transforming ideas into sustainable
+                architectural masterpieces.
+              </p>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+          <div class="card bg-yellow1">
+            <div class="card-body">
+              <div class="w-1/6">
+                <img class="w-full" src="./assets/flow-chart.png" alt="" />
+              </div>
+              <h2 class="card-title text-black1 font-extrabold">
+                Design Process
+              </h2>
+              <p class="text-black3 font-medium">
+                Step-by-step guide innovative architectural design process, from
+                concept to creation.
+              </p>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+          <div class="card bg-teal1">
+            <div class="card-body">
+              <div class="w-1/6">
+                <img class="w-full" src="./assets/vision.png" alt="" />
+              </div>
+              <h2 class="card-title text-black1 font-extrabold">Supervision</h2>
+              <p class="text-black3 font-medium">
+                Expert Oversight Ensuring Quality and Precision in Every
+                Architectural Project.
+              </p>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+          <div class="card bg-blue1">
+            <div class="card-body">
+              <div class="w-1/6">
+                <img class="w-full" src="./assets/budget-planning.png" alt="" />
+              </div>
+              <h2 class="card-title text-black1 font-extrabold">
+                Budget Planning
+              </h2>
+              <p class="text-black3 font-medium">
+                Smart Budget Planning Optimize Costs and Ensure Value in
+                Architecture Projects.
+              </p>
+              <div class="card-actions justify-end"></div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

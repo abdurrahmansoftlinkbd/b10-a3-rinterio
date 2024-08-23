@@ -46,10 +46,14 @@
             fontFamily: {
               manrope: ["Manrope", "sans-serif"],
             },
+            backgroundImage: {
+              bgPage: "url(./assets/bg.jpg)",
+            },
           },
         },
       };
     </script>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="font-manrope">
     <!-- header -->
@@ -309,5 +313,82 @@
         </div>
       </section>
     </main>
+
+    <!-- connect -->
+    <section
+      id="connect"
+      class="bg-bgPage bg-no-repeat bg-cover bg-center mt-24 py-24"
+    >
+      <div class="w-11/12 max-w-5xl mx-auto">
+        <div class="text-center">
+          <a href="#connect"
+            ><button
+              class="font-bold text-black3 bg-green2 py-2 px-4 rounded-full mb-4 hover:bg-green3 transition-colors duration-300 ease-in-out"
+            >
+              <i class="fa-solid fa-arrow-right mr-2"></i>
+              Let’s Connect
+            </button></a
+          >
+        </div>
+        <div class="text-center w-full sm:w-3/4 md:w-4/5 lg:w-1/2 mx-auto">
+          <h2 class="text-4xl font-bold leading-tight">
+            Let’s Discuss Next Project
+          </h2>
+          <p class="pt-6 pb-8 font-medium text-black3">
+            Initiate Your Vision by Connecting with Our Experts to Bring Your
+            Next Architectural Project to Life.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 gap-y-5 sm:grid-cols-2 sm:gap-6">
+          <div>
+            <input
+              class="font-medium outline-none border rounded-full p-5 w-full"
+              type="text"
+              placeholder="First Name*"
+            />
+          </div>
+          <div>
+            <input
+              class="font-medium outline-none border rounded-full p-5 w-full"
+              type="text"
+              placeholder="Last Name*"
+            />
+          </div>
+          <div>
+            <input
+              class="font-medium outline-none border rounded-full p-5 w-full"
+              type="number"
+              placeholder="Phone Number*"
+            />
+          </div>
+          <div>
+            <input
+              class="font-medium outline-none border rounded-full p-5 w-full"
+              type="email"
+              placeholder="Email Number*"
+            />
+          </div>
+        </div>
+        <div>
+          <textarea
+            class="font-medium outline-none border rounded-3xl col-start-1 col-end-3 p-5 mt-5 sm:mt-6 w-full"
+            placeholder="Write your message here"
+            rows="8"
+          ></textarea>
+        </div>
+        <div class="text-center w-full">
+          <a href="#"
+            ><button
+              class="py-2 px-4 lg:py-3 lg:px-5 bg-green1 font-extrabold text-lg rounded-full border-2 border-green1 hover:bg-green1 transition-colors duration-300 ease-in-out w-full hover:bg-green3 mt-8"
+            >
+              Send Mail
+              <i
+                class="fa-solid fa-arrow-right px-2 py-1 text-white text-xl -rotate-45 bg-black1 rounded-full ml-2"
+              ></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
